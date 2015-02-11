@@ -1,0 +1,42 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 30px;
+    color: #666;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    color: #000;
+}
+
+p {
+    margin-top: 0;
+}
+
+a {
+    color: #0082c6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0072c5;
+    text-decoration: underline;
+}
+
+.external {
+    font-size: 15px;
+    margin: 0 0 6px 0;
+}
+
+.intro {
+    color: #666;
+    margin-bottom: 30px;
+}
