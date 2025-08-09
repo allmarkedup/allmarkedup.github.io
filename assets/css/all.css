@@ -1,23 +1,38 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  padding: 30px;
-  color: #666;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  padding: 5vw;
+  color: #333;
 }
 
 h1 {
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
   margin-top: 0;
   color: #000;
 }
 
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: 0.1em;
+  color: #888;
+}
+
 p {
   margin-top: 0;
+  line-height: 1.5;
 }
 
 a {
@@ -30,12 +45,11 @@ a:hover {
   text-decoration: underline;
 }
 
-.external {
-  font-size: 15px;
-  margin: 0 0 6px 0;
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
-.intro {
-  color: #666;
-  margin-bottom: 30px;
+.links {
+  margin: 0.6rem 0;
 }
