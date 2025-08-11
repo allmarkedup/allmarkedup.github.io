@@ -1,3 +1,13 @@
+/* @link https://utopia.fyi/type/calculator?c=360,16,1.2,1280,20,1.25,4,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --size-0: clamp(1rem, 0.9022rem + 0.4348vw, 1.25rem);
+  --size-1: clamp(1.2rem, 1.0582rem + 0.6304vw, 1.5625rem);
+  --size-2: clamp(1.44rem, 1.2392rem + 0.8924vw, 1.9531rem);
+  --size-3: clamp(1.728rem, 1.4488rem + 1.2407vw, 2.4414rem);
+  --size-4: clamp(2.0736rem, 1.6908rem + 1.7011vw, 3.0518rem);
+}
+
 *,
 *:before,
 *:after {
@@ -11,45 +21,112 @@ body {
   font-weight: 300;
   font-style: normal;
   padding: 5vw;
-  color: #333;
+  color: #6a7282;
+  font-size: var(--size-4);
+  width: 100vw;
+  height: 100vh;
+  background: #fff url("../../assets/img/bg.png");
+  background-size: 60px;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: var(--size-4);
   font-weight: 700;
   margin-bottom: 1.5rem;
   margin-top: 0;
-  color: #000;
-}
-
-h2 {
-  font-size: 16px;
-  font-weight: 400;
+  white-space: nowrap;
+  color: #030712;
   display: inline-block;
-  margin-right: 0.1em;
-  color: #888;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 17px 8px rgba(255, 255, 255, 0.7);
 }
 
-p {
-  margin-top: 0;
-  line-height: 1.5;
+#tags {
+  font-size: var(--size-0);
+  line-height: 1.6;
+  max-width: 27em;
+  padding: 0;
+  list-style: none;
+  user-select: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.4em;
 }
 
-a {
-  color: #0082c6;
+#tags li {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 2px 2px rgba(255, 255, 255, 1);
+  transition: background-color 400ms;
+}
+
+#tags a,
+#tags a:hover,
+#tags a:active,
+#tags a:visited {
+  color: #6a7282;
   text-decoration: none;
 }
 
-a:hover {
-  color: #0072c5;
-  text-decoration: underline;
+#tags abbr {
+  display: inline-block;
+  margin-right: 0.05em;
 }
 
-.intro {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+#tags a:hover em {
+  color: #6a7282;
 }
 
-.links {
-  margin: 0.6rem 0;
+#tags a:hover abbr {
+  opacity: 0.6;
+}
+
+#tags em {
+  font-style: normal;
+}
+
+#tags li * {
+  transition: color 200ms, opacity 500ms;
+}
+
+#tags:hover li:not(:hover) > span,
+#tags:hover li:not(:hover) > a {
+  opacity: 0.4;
+}
+
+#tags:hover li:not(:hover) {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.4);
+}
+
+#tags a:hover em {
+  color: #c6005c;
+}
+
+#tags a.lookbook:hover em {
+  color: #372aac;
+}
+
+#tags a.strava:hover em {
+  color: #fc5201;
+}
+
+#tags a.coveragebook:hover em {
+  color: #1b8871;
+}
+
+#tags a.github:hover em {
+  color: #155dfc;
+}
+
+#tags a.crosswords:hover em {
+  color: #d59c01ff;
+}
+
+#tags a.tumblr:hover em {
+  color: #c1472b;
+}
+
+#tags a.mastodon:hover em {
+  color: #6364ff;
 }

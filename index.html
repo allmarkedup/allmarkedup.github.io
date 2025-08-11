@@ -1,40 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="assets/css/all.css" />
+  <link rel="stylesheet" href="assets/css/all.css" />
 
-    <title>Mark Perkins | All Marked Up</title>
-  </head>
-  <body>
-    <h1>Mark Perkins</h1>
+  <script defer>
+    addEventListener("DOMContentLoaded", () => {
+      const tags = document.getElementById("tags");
+      for (let i = tags.children.length; i >= 0; i--) {
+        tags.appendChild(tags.children[Math.random() * i | 0]);
+      }
+    });
+  </script>
 
-    <p class="intro">
-      Frontend developer. Amateur Rubyist.<br />
-      Component-driven development geek.
-    </p>
+  <title>Mark Perkins | All Marked Up</title>
+</head>
+<body>
+  <h1>Mark Perkins</h1>
 
-    <div class="links">
-      <h2>Elsewhere ~</h2>
-      <a href="https://github.com/allmarkedup" rel="me">Github</a> •
-      <a href="https://www.strava.com/athletes/ultraperk" rel="me">Strava</a> •
-      <a href="https://ultraperk.com" rel="me">Tumblr</a>
-    </div>
-
-    <div class="links">
-      <h2>Projects ~</h2>
-      <a href="https://lookbook.build">Lookbook</a> •
-      <a href="https://github.com/allmarkedup/stimulus-x">StimulusX</a> •
-      <a href="https://crosswords.lol">Crosswords.lol</a>
-    </div>
-  </body>
+  <ul id="tags">
+    <li>
+      <span>
+        <abbr>#</abbr><em>html</em>
+      </span>
+    </li>
+    <li>
+      <span>
+        <abbr>#</abbr><em>css</em>
+      </span>
+    </li>
+    <li>
+      <span>
+        <abbr>#</abbr><em>javasript</em>
+      </span>
+    </li>
+    <li>
+      <span>
+        <abbr>#</abbr><em>ruby</em>
+      </span>
+    </li>
+    <li>
+      <span>
+        <abbr>#</abbr><em>rails</em>
+      </span>
+    </li>
+    <li>
+      <span>
+        <abbr>#</abbr><em>components</em>
+      </span>
+    </li>
+    <li>
+      <a href="https://lookbook.build" target="_blank" class="lookbook">
+        <abbr>#</abbr><em>lookbook</em>
+      </a>
+    </li>
+    <li>
+      <a href="https://coveragebook.com" target="_blank" class="coveragebook">
+        <abbr>#</abbr><em>coveragebook</em>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.strava.com/athletes/ultraperk" rel="me" target="_blank" class="strava">
+        <abbr>#</abbr><em>strava</em>
+      </a>
+    </li>
+    <li>
+      <a href="https://ruby.social/@allmarkedup" rel="me" target="_blank" class="github">
+        <abbr>#</abbr><em>github</em>
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/allmarkedup" rel="me" target="_blank" class="mastodon">
+        <abbr>#</abbr><em>mastodon</em>
+      </a>
+    </li>
+    <li>
+      <a href="https://ultraperk.com" rel="me" target="_blank" class="tumblr">
+        <abbr>#</abbr><em>tumblr</em>
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/allmarkedup/stimulus-x" target="_blank" class="stimulus-x">
+        <abbr>#</abbr><em>stimulus-x</em>
+      </a>
+    </li>
+    <li>
+      <a href="https://crosswords.lol" target="_blank" class="crosswords">
+        <abbr>#</abbr><em>crosswords.lol</em>
+      </a>
+    </li>
+  </ul>
+</body>
 </html>
