@@ -1,4 +1,4 @@
-/* @link https://utopia.fyi/type/calculator?c=360,16,1.2,1280,20,1.25,4,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* @link https://utopia.fyi/type/calculator?c=360,16,1.2,1280,20,1.25,7,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 :root {
   --size-0: clamp(1rem, 0.9022rem + 0.4348vw, 1.25rem);
@@ -6,6 +6,9 @@
   --size-2: clamp(1.44rem, 1.2392rem + 0.8924vw, 1.9531rem);
   --size-3: clamp(1.728rem, 1.4488rem + 1.2407vw, 2.4414rem);
   --size-4: clamp(2.0736rem, 1.6908rem + 1.7011vw, 3.0518rem);
+  --size-5: clamp(2.4883rem, 1.9693rem + 2.3067vw, 3.8147rem);
+  --size-6: clamp(2.986rem, 2.2885rem + 3.0998vw, 4.7684rem);
+  --size-7: clamp(3.5832rem, 2.6529rem + 4.1344vw, 5.9605rem);
 }
 
 *,
@@ -20,13 +23,13 @@ body {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  padding: var(--size-4);
+  padding: var(--size-5);
   color: #6a7282;
   font-size: var(--size-4);
   width: 100vw;
   height: 100vh;
   background: #fff url("../../assets/img/bg.png");
-  background-size: 60px;
+  background-size: var(--size-6);
 }
 
 h1 {
@@ -91,7 +94,7 @@ h1 {
 
 #tags:hover li:not(:hover) > span,
 #tags:hover li:not(:hover) > a {
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 #tags:hover li:not(:hover) {
