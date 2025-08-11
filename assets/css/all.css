@@ -20,7 +20,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  padding: 5vw;
+  padding: var(--size-4);
   color: #6a7282;
   font-size: var(--size-4);
   width: 100vw;
